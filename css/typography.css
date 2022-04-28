@@ -5,6 +5,7 @@
 /*------------------------------------------------*/
 .title{
     font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
     text-align: center;
 }
 .subtitle{
@@ -13,8 +14,10 @@
 /*------------------------------------------------*/
 .heading{
     font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
 }
 .description{
     font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
 }
 /*------------------------------------------------*/
