@@ -7,4 +7,6 @@ $(function(){
       nav.removeClass('bg-black shadow')
     }
   })
+  
 })
+

@@ -21,13 +21,10 @@
 *,
 *::before,
 *::after{
-    box-sizing: border-box;
+
 }
 body{
-    place-items: center;
-    display: grid;
     background-color: var(--black);
-    line-height: 1.6;
 }
 
 
@@ -119,28 +116,70 @@ body{
 }
 
 
+
+
 /*ABOUT*/
+.cv-header{
 
+}
+.about-button{
+    font-family: 'EB Garamond', serif;
+    margin-top: 0.5rem;
+}
+.about-buttons{
+    list-style-type: none;
+}
 
+.about-container{
+    height: 75vh;
+}
+
+.left{
+    background-color: var(--orange);
+    
+}
+
+.right{
+    background-color: var(--grey);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pfp{
+    display: flex;
+    border-radius: 50%;
+    width:4rem;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.across{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 /*Portfolio*/
 
 /*CARDS*/
 .card-whole{
+    margin-top: 3rem;
     color: var(--white);
     background-color: var(--white);
     background-image: url('../images/samples/photo-1511497584788-876760111969.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 35ch;
+    max-width: 90%;
     border-radius: 0.35em;
     overflow: hidden;
     transition: transform 250ms ease-in-out;
 }
-
-
-
-
 
 .card-content{
     --padding: 1rem;
@@ -191,7 +230,7 @@ body{
     height: 3px;
     width: calc(100% + var(--padding));
     background: var(--neon);
-    transform-origin: left;
+
     transition: transform 250ms ease-in-out;
     
 }
@@ -211,4 +250,20 @@ body{
     color: var(--brown);
     font-weight: bold;
     background-color: var(--grey);
+}
+/*CONTACT*/
+#contact{
+	background:#333333;
+	color:#f4f4f4;
+	padding-bottom:80px;
+}
+
+textarea.form-control{
+    height:100px;
+}
+
+.contact-image{
+    width:6rem;
+    height:6rem;
+
 }

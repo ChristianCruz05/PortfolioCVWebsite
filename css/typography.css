@@ -3,9 +3,18 @@
 /*------------------------------------------------*/
 
 /*------------------------------------------------*/
+.title-big{
+    font-family: 'Monoton', serif;
+    text-align: center;
+}
 .title{
     font-family: 'Roboto Slab', serif;
     font-size: 3rem;
+    text-align: center;
+}
+.title-small{
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
     text-align: center;
 }
 .subtitle{
