@@ -9,13 +9,14 @@
 }
 .title{
     font-family: 'Roboto Slab', serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 .title-small{
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
     text-align: center;
+    
 }
 .subtitle{
     font-family: 'Roboto', sans-serif;
