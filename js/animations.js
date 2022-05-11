@@ -1,12 +1,35 @@
 $(function(){
     $("#neon-button").toggle();
-    $("#neon-button").fadeIn(5);
-    $("#neon-button").fadeOut(50);
-    $("#neon-button").fadeIn(10);
-    $("#neon-button").fadeOut(100);
-    $("#neon-button").fadeIn(50);
-    $("#neon-button").fadeOut(250);
-    $("#neon-button").fadeIn(1000);
+    $("#neon-button").fadeIn(1250);
+
 
 
 })
+
+$(document).ready(function () {
+    var breakpoint = 1000;
+
+    if ($(window).width() < breakpoint) {
+        $('.js-slidein').removeClass('js-slidein');
+    }
+
+    $('.js-slidein').each(function (i) {
+        var bottomObject = $(this).offset().top;
+        var bottomWindow = $(window).scrollTop() + $(window).height();
+
+        if (bottomWindow > bottomObject) {
+        $(this).removeClass('js-slidein');
+        }
+    });
+
+    $(window).scroll(function () {
+        $('.js-slidein').each(function (i) {
+        var bottomObject = $(this).offset().top + $(this).outerHeight() / 3;
+        var bottomWindow = $(window).scrollTop() + $(window).height();
+
+        if (bottomWindow > bottomObject) {
+            $(this).addClass('js-slidein-visible');
+        }
+        });
+    });
+});

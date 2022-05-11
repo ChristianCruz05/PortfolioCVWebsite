@@ -135,7 +135,7 @@ body{
 }
 
 .left{
-    background-color: var(--orange);
+    background-color: var(--dark-grey);
     
 }
 
@@ -272,3 +272,17 @@ textarea.form-control{
     height:6rem;
 
 }
+
+/*slide in*/
+.js-slidein {
+    opacity: 0.25;
+    transform: translateY(25px);
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.js-slidein-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+  
