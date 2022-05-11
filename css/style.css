@@ -186,6 +186,21 @@ body{
     transition: transform 250ms ease-in-out;
 }
 
+
+.art-projects{
+    background-image: url('../images/art/7.png');
+}
+.coding-projects{
+    background-image: url('../images/gallery/github.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.web-designs{
+    background-image: url('../images/gallery/web-design.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .card-content{
     --padding: 1rem;
     border-radius: 0.35em;
@@ -285,4 +300,8 @@ textarea.form-control{
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
-  
+
+
+.logo{
+    width: 7rem;
+}
