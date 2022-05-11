@@ -119,8 +119,8 @@ body{
 
 
 /*ABOUT*/
-.cv-header{
-
+.about-whole{
+    width:95%
 }
 .about-button{
     font-family: 'EB Garamond', serif;

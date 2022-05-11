@@ -83,10 +83,10 @@
       <!-----------------------------ABOUT SECTION START----------------------------->
       <section id="about">
         <!--ABOUT ME-->
-        <div class="container">
+        <div class="container-fluid p-0">
           <h1 class="text-white title">ABOUT ME</h1>
         </div>
-        <div class="container my-5 d-grid gap-5">
+        <div class="container-fluid my-3 d-grid gap-5 about-whole">
           <div class="container-fluid bg-white p-0">
             <div class="container-fluid cv-header">
               <!--CONTENTS ABOUT-->
@@ -95,30 +95,45 @@
                 <div class="col-md-2 col-sm-4 col-xs-2 container-fluid justify-content-md-center left">
                   <img src="images/pfp.png" alt="Avatar" class="pfp mt-4">
                   <ul class="about-buttons p-0 mt-4">
-                    <li class = "about-button"><button class="btn btn-dark">About</button></li>
-                    <li class = "about-button"><button class="btn btn-dark">Experience</button></li>
-                    <li class = "about-button"><button class="btn btn-dark">Education</button></li>
-                    <li class = "about-button"><button class="btn btn-dark">Skills</button></li>
-                    <li class = "about-button"><button class="btn btn-dark">Interest</button></li>
+                    <li id="about-btn" class = "about-button"><button class="btn btn-dark">About</button></li>
+                    <li id="education-btn" class = "about-button"><button class="btn btn-dark">Education</button></li>
+                    <li id="skills-btn" class = "about-button"><button class="btn btn-dark">Skills</button></li>
                   </ul>
                 </div>
                 <!--Contents Panel-->
-                <div class="col-md-10 col-sm-8 col-xs-10 right">          
-                  <div class="p-5 border d-none center" id ="about-me"><!--ABOUT-->
+                <div class="col-md-10 col-sm-8 col-xs-10 right">    
+
+                  
+                  <div class="center " id ="about-me"><!--ABOUT-->
                     <div class="center">
                       <h2 class="title">MARK CHRISTIAN CRUZ</h2>
                       <span class="across">
-                        <p class="subtitle pl-2">Game Developer</p>
+                        <p class="subtitle pl-2">Programmer</p>
                         <p class="subtitle pl-2">Concept Artist</p>
                         <p class="subtitle pl-2">Digital Painter </p>
                         <p class="subtitle pl-2">Web Developer</p>
                       </span>                    
                     </div>
-                  </div>   
-                  <div class="p-5 border d-none center" id="experience"><!--EXPERIENCE-->
-                    <h2 class="title">ART</h2>
-                    <h2 class="title">CODE</h2>
-                  </div>   
+                    <p class="heading mt-3">Who am I?</p>
+                    <p class="description">
+                      I am a grade 11 Student from the school of CIIT. I am a creative and imaginative person;
+                      always seeking for new and innovative ideas. I will be your fullstack developr -- simultaneously 
+                      designing and coding. Let me help you and your company grow.
+                    </p>
+                    <p class="heading mt-3">What can I Offer?</p>
+                    <p class="description">
+                      I will help design your website, pick colors, draw infographics, and even design your 
+                      brand. 
+                    </p>
+                    <p class="heading mt-3">Where to Contact?</p>
+                    <p class="description">
+                      Please use the contact section below or click this button to directly chat me on Messenger.
+                    </p>
+                      <!-- Messenger -->
+                      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fa-regular fa-message mx-2"></i>CHAT ME</a>
+                  </div> 
+                  
+                  
                   <div class="center d-none" id ="education"><!--EDUCATION-->
                     <h2 class="title-small">Junior HighSchool</h2>
                     <span class="across">
@@ -140,7 +155,9 @@
                       <p class="subtitle pl-2">Average Grade: 97</p>
                     </center>
                   </div>
-                  <div class="center" id="skills"><!--SKILLS-->
+
+
+                  <div class="center d-none" id="skills"><!--SKILLS-->
                     <h1 class="title-small">Languages</h1>
                     <span class="across w-100">
                       <img src="images/about/1.png" alt="" class="about-images">
@@ -166,11 +183,8 @@
                       <img src="images/about/18.png" alt="" class="about-images">
                     </span>
                   </div>   
-                  <div class="p-5 border d-none center" id="interest"><!--INTEREST-->
-                    <p>    
-                      This will be the about Interest content
-                    </p>
-                  </div>   
+
+                  
                 </div>
               </div>
             </div>
@@ -192,7 +206,7 @@
                 <div class="card-content">
                   <h2 class="card-title heading text-white">ART PROJECTS</h2>
                   <p class="card-body description text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Take a look at some of my art. I like doing art as a side hobby.
                   </p>
                   <a href="pages/gallery1.html" class="card-button">See Artworks</a>
                 </div>
@@ -203,9 +217,9 @@
                 <div class="card-content">
                   <h2 class="card-title heading text-white">CODING PROJECTS</h2>
                   <p class="card-body description text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Visit my GitHub page to see what projects I'm currently working on.
                   </p>
-                  <a href="#" class="card-button">See Artworks</a>
+                  <a href="https://github.com/ChristianCruz05" target="_blank" class="card-button">Go To Github</a>
                 </div>
               </div>
             </div>
@@ -214,9 +228,9 @@
                 <div class="card-content">
                   <h2 class="card-title heading text-white">WEB DESIGNS</h2>
                   <p class="card-body description text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    See my journey as a web developer. These are from February to May.
                   </p>
-                  <a href="#" class="card-button">See Artworks</a>
+                  <a href="#" class="card-button">Previous Designs</a>
                 </div>
               </div>
             </div>
@@ -250,14 +264,14 @@
                       </div>
                       <div class="form-group ">
                         <label for="exampleInputText" class="description">Your Message</label>
-                       <textarea  class="form-control" placeholder="Description"></textarea> 
+                       <textarea  class="form-control description" placeholder="Description"></textarea> 
                       </div>
-                      <button type="submit" class="btn btn-light m-3 description">Send Message</button>
+                      <button type="submit" class="btn btn-light m-3 subtitle">Send Message</button>
                     </form>
                   </div>
                   <div class="col-md-4 p-5">
                     <span class="blank">
-                    <p class="description">Feel free to contact us</p>
+                    <p class="subtitle">Feel free to contact us</p>
                     <img src="images/Contact.png" alt="contact" class="contact-image">
                     </span>
                   </div>
@@ -289,12 +303,12 @@
             ><i class="fab fa-instagram"></i
             ></a>
     
-            <!-- Facebook -->
+            <!-- Messenger -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
             ><i class="fa-regular fa-message"></i></a>
 
             <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/ChristianCruz05" target="_blank" role="button"
             ><i class="fa-brands fa-github"></i></a>
 
         </div>    
