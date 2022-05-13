@@ -131,7 +131,7 @@ body{
 }
 
 .about-container{
-    height: 75vh;
+    height: 35rem;
 }
 
 .left{
@@ -188,7 +188,7 @@ body{
 
 
 .art-projects{
-    background-image: url('../images/art/7.png');
+    background-image: url('https://i.postimg.cc/44162dMq/1.png');
 }
 .coding-projects{
     background-image: url('../images/gallery/github.png');

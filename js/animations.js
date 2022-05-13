@@ -1,9 +1,6 @@
 $(function(){
     $("#neon-button").toggle();
     $("#neon-button").fadeIn(1250);
-
-
-
 })
 
 $(document).ready(function () {
